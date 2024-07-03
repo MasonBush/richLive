@@ -32,7 +32,7 @@ def richLive():
 
 	randInt = random.randint(10000000000, 19999999999)
 	payload = json.dumps({
-		"content": "LIVE 🔴 | RichardLewisReports is now live at https://twitch.tv/richardlewisreports",
+		"content": "@everyone LIVE 🔴 | RichardLewisReports is now live at https://twitch.tv/richardlewisreports",
 		"embeds": [
 			{
 			"title": twitch.title,
