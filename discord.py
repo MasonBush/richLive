@@ -41,7 +41,7 @@ def richLive():
 			"fields": [
 				{
 				"name": "Category",
-				"value": "Just Chattin"
+				"value": twitch.category
 				}
 			],
 			"image": {
