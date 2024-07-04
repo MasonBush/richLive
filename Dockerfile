@@ -1,4 +1,4 @@
-FROM python:slim
+FROM python:3.11-alpine
 
 RUN mkdir -p /python
 COPY main.py /python
