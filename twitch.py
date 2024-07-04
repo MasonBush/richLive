@@ -6,7 +6,6 @@ category = ""
 
 
 def getAuth():
-	url = "https://id.twitch.tv/oauth2/token"
 
 	clientID = os.getenv("clientID")
 	clientSecret = os.getenv("clientSecret")
@@ -14,6 +13,7 @@ def getAuth():
 	payload = f'client_id={clientID}&client_secret={clientSecret}&grant_type=client_credentials'
 	headers = {'Content-Type': 'application/x-www-form-urlencoded'}
 
+	url = "https://id.twitch.tv/oauth2/token"
 	response = requests.request("POST", url, headers=headers, data=payload)
 
 	if response.status_code == 200:
