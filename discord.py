@@ -52,8 +52,7 @@ def richLive():
 			}
 			}
 		],
-		"username": "richLive",
-		"attachments": []
+		"username": "richLive"
 	})
 
 
