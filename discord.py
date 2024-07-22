@@ -39,6 +39,4 @@ def richLive():
 
 
 	headers = {'Content-Type': 'application/json'}
-	response = requests.request("POST", url, headers=headers, data=payload)
-
-	print(f"code: {response.status_code}")
+	requests.request("POST", url, headers=headers, data=payload)
