@@ -50,16 +50,15 @@ def post_webhook():
 					return request.json['challenge'], 200
 				
 			case "notification":
-
 				if "event" in request.json:
 					eventType = request.json['subscription']['type']
 					event = request.json['event']
 
-					if eventType == "channel.update":
+					if eventType == "channel.update" and event['broadcaster_user_id'] == '66022235':
 						twitch.title = event['title']
 						twitch.category = event['category_name']
 
-					if eventType == "stream.online":
+					if eventType == "stream.online" and event['broadcaster_user_id'] == '66022235':
 						discord.richLive()
 
 	return "", 200
